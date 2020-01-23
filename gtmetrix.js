@@ -1,5 +1,5 @@
 const Excel = require('exceljs'); // Чтение excel файлов
-const gtm = require('gtmetrix');
+const gtm = require('gtmetrix'); // gtmetrix
 const email = [
   {
     email: 'tigramasya96@yandex.ru',
