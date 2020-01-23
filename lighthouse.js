@@ -50,7 +50,7 @@ function readAndCheckAndWrite(tableName, sheetName, startCol = 3, endCol = 400, 
                   let val = 0; // Сдвиг по стобцам
                   let newCell = 0; // Сдвиг по стобцам, при втором анализе
 
-                  // await pWriteFile(`./report/${sheetName}/${fileName}.html`, results.report); // Сохранение отчета в html формате
+                  await pWriteFile(`./report/${sheetName}/${fileName}.html`, results.report); // Сохранение отчета в html формате
 
                   if (worksheet.getRow(array !== null ? array[i] : startCol + i).getCell(3).value) newCell = 5; // Если url проверяется второй раз, то сдвинуть ячейки
 
@@ -93,4 +93,4 @@ function readAndCheckAndWrite(tableName, sheetName, startCol = 3, endCol = 400, 
           })
 }
 
-readAndCheckAndWrite('PageSpeed', 'FR', 3, 3);
+readAndCheckAndWrite('PageSpeed', 'FR', 4, 4);
